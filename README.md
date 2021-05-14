@@ -22,7 +22,7 @@ Minium viable product(MVP) goal aka base requirements for finished product:
 
 stretch goals:
 Stretch goals is to add an item that the character can pick up that allows her to shoot out a laser to shoot obstacles. Will last for about 5 uses.
-Play sound during gameplay and play sound when the character hits an obstacle.
+Play sound during gameplay and play sound when the character hits an obstacle. Add animation when the characters hit an obstacle and the game ends.
 
 potential roadblocks:
 -Randomly generating obstacles and making sure they to appear in the correct spot.
