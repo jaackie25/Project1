@@ -5,8 +5,10 @@ The game is a scrolling style game and will be 2D. Main character will be Sailor
 
 Tech Stack: HTML, JS, CSS, phaser.io(maybe) or createJS(maybe).
 My plan for the background is to have a sunset sky color style with clouds. Then a path that Sailormoon will be walking on and where all the obstacles will be.
-A score will appear on the right hand corner of the game. Score will be calculated by distance travelled.
-Collision detection will be calculated with a function the object will have a position on the x-y axis and have a set height and width.
+A score will appear on the right hand corner of the game. Score will be calculated by distance travelled on the x-axis.
+A collision will be calculated with a function and if else statements. The object will have a position on the x-y axis and have a set height and width. Then using an if else to determine if the character has hit any obstacles.
+There will be function for the main characters that calculates her position based on the size of the game and will have her set width and height.
+EventListeners will be created for the keypress for the characters movement in the game. I will also have a 2 functions for when my character jumps
 
 WireFrames for the game:
 ![gameplaydraft](./gameplaydraft.png)
