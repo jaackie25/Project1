@@ -2,3 +2,38 @@
   text-align: center;
   margin: 9rem auto;
 }
+
+#canvas {
+  /* background-image: url("/images/background2.png"); */
+  background-size: 100% 100%;
+  display: none;
+}
+
+#read {
+  display: none;
+}
+/* 
+#read:hover {
+  border: 1px solid black;
+  margin: 20px;
+  content: "Use the up and down arrows to jump and duck over obstacles" !important;
+} */
+
+#gameover {
+  display: none;
+}
+
+#instructions:hover {
+  color: black;
+  background-color: pink;
+  bottom: 0.4em;
+  transition: bottom 0.2s ease;
+}
+
+#instructions:hover::after {
+  border: 1px solid black;
+  bottom: 0.4em;
+  transition: bottom 0.2s ease;
+
+  content: "Use the up and down arrows to jump and duck over obstacles" !important;
+}
