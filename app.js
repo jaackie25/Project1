@@ -42,12 +42,13 @@ window.addEventListener("DOMContentLoaded", () => {
     // player images
     let playerImg = new Image()
     playerImg.src = "/images/secondsetsailor.png"
+   
     let playerDuckImg = new Image()
     playerDuckImg.src = "/images/sailorducking.png"
+   
     let playerJumping = new Image()
     playerJumping.src = "/images/jumpingsailor.png"
-    let playerFalling = new Image()
-    playerFalling.src = "/images/fallingsailor.png"
+   
     let background = new Image()
     background.src = "/images/background3.png"
 
