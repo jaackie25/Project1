@@ -4,36 +4,118 @@
 }
 
 #canvas {
-  /* background-image: url("/images/background2.png"); */
+  background-image: url("/images/background3.png");
   background-size: 100% 100%;
   display: none;
+  margin: 3rem auto;
 }
 
-#read {
-  display: none;
+h1 {
+  font-family: "Carter One", cursive;
+  margin-top: 10px;
+  text-align: center;
+  background-image: linear-gradient(40deg, #abe5e6, #7062f0);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-/* 
-#read:hover {
+
+p {
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  font-family: "Poppins", sans-serif;
+}
+
+.imgStart {
+  height: 240px;
+  content: center;
+}
+
+#start {
+  width: 750px;
+  height: 450px;
+  text-align: center;
+  margin: 3rem auto;
+  position: relative;
+  background-image: url(/images/gamestart2.png);
+  background-size: 100% 100%;
+}
+
+#gameover {
   border: 1px solid black;
-  margin: 20px;
-  content: "Use the up and down arrows to jump and duck over obstacles" !important;
-} */
+  width: 750px;
+  height: 450px;
+  text-align: center;
+  margin: 3rem auto;
+  position: relative;
+}
+
+#restart {
+  position: absolute;
+  top: 75%;
+  left: 45%;
+}
+
+#startGame {
+  position: absolute;
+  border: 1px solid grey;
+  top: 75%;
+  left: 45%;
+  padding: 3px 5px;
+  background-image: linear-gradient(
+    to right,
+    #fbca88 5%,
+    #ef69ad 35%,
+    #fbc2eb 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #fbc2eb;
+  border-radius: 10px;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 2px;
+}
+
+#startGame:hover {
+  background-position: center;
+}
 
 #gameover {
   display: none;
+  background-image: url(/images/gameendingimg1.gif);
+  background-size: 100% 100%;
 }
 
-#instructions:hover {
-  color: black;
-  background-color: pink;
-  bottom: 0.4em;
-  transition: bottom 0.2s ease;
+#gameOverScore {
+  font-family: "Staatliches", cursive;
+  margin-top: 50px;
+  color: rgb(4, 44, 58);
 }
 
-#instructions:hover::after {
-  border: 1px solid black;
-  bottom: 0.4em;
-  transition: bottom 0.2s ease;
+#gameOverTitle {
+  margin-top: 20px;
+  font-family: "Press Start 2P", cursive;
+  letter-spacing: 10px;
+  text-shadow: 4px 4px 4px white, 1px 1px 2em #ff0d00, 2px 3px 0.5em #ff0d00;
+}
 
-  content: "Use the up and down arrows to jump and duck over obstacles" !important;
+#restart {
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  padding: 3px 5px;
+  background-image: linear-gradient(
+    to right,
+    #e5b3d0 5%,
+    #aea7cf 35%,
+    #2779a6 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 2px;
 }
