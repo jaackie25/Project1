@@ -103,7 +103,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         Jump() {
             if (this.grounded && this.jumping == false) {
-                player.yVel -= 20
+                player.yVel -= 19
                 player.jumping = true
             } else if (this.grounded && this.jumping == true) {
                 player.yVel = 0
