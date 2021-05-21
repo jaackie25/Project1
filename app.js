@@ -8,10 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // screens
     const startScreen = document.getElementById("start")
     const gameOverScreen = document.getElementById("gameover")
-
-    // new Audio sound
-    let openingSound = new Audio("sounds/Sailor Moon OST.mp3")
-  
+ 
     // btns
     const startBtn = document.getElementById("startGame")
     const restartBtn = document.getElementById("restart")
@@ -25,10 +22,6 @@ window.addEventListener("DOMContentLoaded", () => {
     let keys = {}
     let gameRun
 
-    // playing sound 
-    window.onload = function() {
-        openingSound.play();
-    }
     // game play eventlistener
     document.addEventListener("keydown", (e) => {
         keys[e.code] = true
