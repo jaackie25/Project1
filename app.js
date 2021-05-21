@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const startBtn = document.getElementById("startGame")
     const restartBtn = document.getElementById("restart")
 
-    const themesong = new Audio("sounds/Sailor Moon OST.mp3")
+    const themesong = new Audio("./sounds/Sailor Moon OST.mp3")
    
     // variables
     let score
@@ -55,16 +55,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // player images
     let playerImg = new Image()
-    playerImg.src = "images/secondsetsailor.png"
+    playerImg.src = "./images/secondsetsailor.png"
    
     let playerDuckImg = new Image()
-    playerDuckImg.src = "images/sailorducking.png"
+    playerDuckImg.src = "./images/sailorducking.png"
    
     let playerJumping = new Image()
-    playerJumping.src = "images/jumpingsailor.png"
+    playerJumping.src = "./images/jumpingsailor.png"
    
     let background = new Image()
-    background.src = "images/background3.png"
+    background.src = "./images/background3.png"
 
     class Player {
         constructor(x, y, width, height) {
@@ -150,9 +150,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Creation of obstacle class 
     let bat = new Image()
-    bat.src = "images/bat2.png"
+    bat.src = "./images/bat2.png"
     let tree = new Image()
-    tree.src = "images/treept2.png"
+    tree.src = "./images/treept2.png"
 
     class Obstacle {
         constructor(x, y, width, height) {
