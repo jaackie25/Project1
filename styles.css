@@ -23,13 +23,13 @@ h1 {
 p {
   position: absolute;
   top: 85%;
-  left: 20%;
+  left: 14%;
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .imgStart {
   height: 240px;
-  content: center;
 }
 
 #start {
@@ -90,15 +90,17 @@ p {
 
 #gameOverScore {
   font-family: "Staatliches", cursive;
-  margin-top: 50px;
-  color: rgb(4, 44, 58);
+  font-size: 30px;
+  margin-top: 60px;
+  color: rgb(28, 52, 61);
 }
 
 #gameOverTitle {
-  margin-top: 20px;
+  margin-top: 30px;
+  font-size: 50px;
   font-family: "Press Start 2P", cursive;
   letter-spacing: 10px;
-  text-shadow: 4px 4px 4px white, 1px 1px 2em #ff0d00, 2px 3px 0.5em #ff0d00;
+  text-shadow: 3px 4px 4px white, 2px 2px 6em #ff0d00, 3px 4px 0.5em #ff0d00;
 }
 
 #restart {

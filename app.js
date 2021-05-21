@@ -6,12 +6,12 @@ window.addEventListener("DOMContentLoaded", () => {
     const gameOverTitle = document.getElementById("gameOverTitle")
     // screens
     const startScreen = document.getElementById("start")
-    const instructionScreen = document.getElementById("read")
     const gameOverScreen = document.getElementById("gameover")
     // btns
-
     const startBtn = document.getElementById("startGame")
     const restartBtn = document.getElementById("restart")
+    // sound effect
+   
     // variables
     let score
     let player
@@ -130,10 +130,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 this.gameFrame++
             }
         }
-        // FallingSprite(){
-        //     ctx.drawImage(playerFalling, 0, 0, 66, 89, this.x, this.y, 66, 89 )
-        // }
-
     }
 
     // Creation of obstacle class 
@@ -148,7 +144,6 @@ window.addEventListener("DOMContentLoaded", () => {
             this.y = y
             this.width = width
             this.height = height
-            this.color = color
             this.speed = 9
             // sprite variables
             this.frameX = 0
@@ -165,7 +160,7 @@ window.addEventListener("DOMContentLoaded", () => {
         Draw() {
             if (this.y == 360) {
                 ctx.drawImage(bat, this.frameX * this.spriteWidth, this.frameY * this.spriteHeight, this.spriteWidth,
-                    this.spriteHeight, this.x, this.y, this.spriteWidth / 2, this.spriteHeight / 2)
+                    this.spriteHeight, this.x, this.y - 25, this.spriteWidth / 2, this.spriteHeight / 2)
                 if (this.gameFrame % this.staggerFrames == 0) {
                     if (this.frameX < 2) {
                         this.frameX++
@@ -175,7 +170,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 }
                 this.gameFrame++
             } else if (this.y == 400) {
-                ctx.drawImage(tree, 0, 0, 102, 123, this.x, this.y - 60, 102, 123)
+                ctx.drawImage(tree, 0, 0, 102, 123, this.x, this.y - 65, 102, 123)
             }
         }
     }
@@ -222,7 +217,8 @@ window.addEventListener("DOMContentLoaded", () => {
     // spawn time variables
     let initialSpawnTimer = 200
     let spawnTime = initialSpawnTimer
-
+    
+// updating game
     function update() {
         requestAnimationFrame(update)
         ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -232,6 +228,9 @@ window.addEventListener("DOMContentLoaded", () => {
         drawScore()
         spawnTime--
         // spawning obstacles
+        if(spawnTime == 190 && gameRun === true ){
+            createObstacles()
+        }
         if (spawnTime <= 60 && gameRun === true) {
             createObstacles()
             spawnTime = initialSpawnTimer - gameSpeed * 6
@@ -242,9 +241,11 @@ window.addEventListener("DOMContentLoaded", () => {
         // looping through array of obtacles to detect if game ends or obstalces continue to be pushed
         for (let i = 0; i < obstacles.length; i++) {
             let blocks = obstacles[i]
+            
             if (blocks.x + blocks.width < 0) {
                 obstacles.splice(i, 1)
             }
+            
             if (
                 player.x < blocks.x + blocks.width
                 && player.x + player.width > blocks.x
