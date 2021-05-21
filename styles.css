@@ -61,7 +61,7 @@ p {
   position: absolute;
   border: 1px solid grey;
   top: 75%;
-  left: 45%;
+  left: 30%;
   padding: 3px 5px;
   background-image: linear-gradient(
     to right,
@@ -120,4 +120,24 @@ p {
   border-radius: 10px;
   font-family: "Heebo", sans-serif;
   letter-spacing: 2px;
+}
+
+#playAudio {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  padding: 3px 5px;
+  background-image: linear-gradient(
+    to right,
+    #fbca88 5%,
+    #ef69ad 35%,
+    #fbc2eb 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #fbc2eb;
+  border-radius: 10px;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 1px;
 }

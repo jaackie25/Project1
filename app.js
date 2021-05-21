@@ -4,6 +4,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const ctx = canvas.getContext("2d")
     const gameOverScore = document.getElementById("gameOverScore")
     const gameOverTitle = document.getElementById("gameOverTitle")
+
+    const playMusic= document.getElementById("playAudio")
+    
    
     // screens
     const startScreen = document.getElementById("start")
@@ -12,6 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
     // btns
     const startBtn = document.getElementById("startGame")
     const restartBtn = document.getElementById("restart")
+
+    const themesong = new Audio("sounds/Sailor Moon OST.mp3")
    
     // variables
     let score
@@ -21,6 +26,10 @@ window.addEventListener("DOMContentLoaded", () => {
     let gameSpeed
     let keys = {}
     let gameRun
+
+    playMusic.addEventListener("click", () =>
+        themesong.play()
+    )
 
     // game play eventlistener
     document.addEventListener("keydown", (e) => {
@@ -38,8 +47,8 @@ window.addEventListener("DOMContentLoaded", () => {
         startScreen.style.display = "none"
         canvas.style.display = "block"
         gameOverScreen.style.display = "none"
-        openingSound.pause();
-        openingSound.currentTime = 0;
+        themesong.pause();
+        themesong.currentTime = 0;
         start()
 
     })
