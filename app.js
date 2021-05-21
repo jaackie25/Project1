@@ -4,13 +4,14 @@ window.addEventListener("DOMContentLoaded", () => {
     const ctx = canvas.getContext("2d")
     const gameOverScore = document.getElementById("gameOverScore")
     const gameOverTitle = document.getElementById("gameOverTitle")
+   
     // screens
     const startScreen = document.getElementById("start")
     const gameOverScreen = document.getElementById("gameover")
+   
     // btns
     const startBtn = document.getElementById("startGame")
     const restartBtn = document.getElementById("restart")
-    // sound effect
    
     // variables
     let score
