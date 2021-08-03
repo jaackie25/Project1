@@ -4,7 +4,7 @@
 }
 
 #canvas {
-  background-image: url("/images/background3.png");
+  background-image: url(/images/background3.png);
   background-size: 100% 100%;
   display: none;
   margin: 3rem auto;
