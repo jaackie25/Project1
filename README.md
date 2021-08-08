@@ -11,8 +11,6 @@ A collision will be calculated with a function and if else statements. The objec
 There will be function for the main characters that calculates her position based on the size of the game and will have her set width and height.
 EventListeners will be created for the keypress for the characters movement in the game.
 
-WireFrames for the game:
-![gameplaydraft](./gameplaydraft.png)
 
 Minium viable product(MVP) goal aka base requirements for finished product:
 -Start game window
